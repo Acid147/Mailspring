@@ -79,7 +79,7 @@ export default class MailspringStore {
   }
 
   stopListeningToAll() {
-    let remaining = undefined;
+    let remaining;
     const subs = this.subscriptions || [];
     while ((remaining = subs.length)) {
       subs[0].stop();

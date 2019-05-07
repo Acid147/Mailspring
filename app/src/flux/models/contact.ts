@@ -523,7 +523,6 @@ export class Contact extends Model {
 
     // Split the name into words and remove parts that are prefixes and suffixes
     if (parts.join('').length === 0) {
-      parts = [];
       parts = name.split(/\s+/);
       if (parts.length > 0 && namePrefixes[parts[0].toLowerCase().replace(/\./, '')]) {
         parts = parts.slice(1);

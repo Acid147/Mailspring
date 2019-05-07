@@ -65,10 +65,7 @@ export default class TimePicker extends React.Component<TimePickerProps, TimePic
   }
 
   _onKeyDown = event => {
-    if (event.key === 'ArrowUp') {
-      event.preventDefault();
-      this._onArrow(event.key);
-    } else if (event.key === 'ArrowDown') {
+    if (event.key === 'ArrowUp' || event.key === 'ArrowDown') {
       event.preventDefault();
       this._onArrow(event.key);
     } else if (event.key === 'Enter') {

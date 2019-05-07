@@ -52,7 +52,7 @@ class InitialLoadingCover extends React.Component<
       slow: this.state.slow,
     });
 
-    let message = this.props.error;
+    let message;
     if (this.props.error) {
       message = this.props.error;
     } else if (this.state.slow) {

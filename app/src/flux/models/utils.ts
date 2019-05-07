@@ -394,7 +394,6 @@ export function isEqual(
       console.log('isEqual is false', a, b, options);
     }
     return value;
-  } else {
   }
   return value;
 }
